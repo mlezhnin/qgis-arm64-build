@@ -1,6 +1,8 @@
-Build for QGIS on ARM64 docker container
+# Build for QGIS on ARM64 docker container
 
 Note: Make sure you provide enough RAM (12gb min.) to Docker while it's compiling QGIS. SIP is a memory hog and you will run into OOM errors if you don't otherwise change compiler flags.
+
+IF you attempt building the image and have an OOM error, do not use that image. You will have to recompile QGIS for every container, which can take a long time (2hrs on M4 MacBook air).
 
 Steps to build QGIS:
 
